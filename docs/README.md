@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /hero.png
+# heroImage: /falloxbow.jpg
 heroText: null
 heroImageStyle:
   {
@@ -11,15 +11,16 @@ heroImageStyle:
     background: '#fff',
     borderRadius: '1rem',
   }
+bgImage: 'falloxbow.jpg'
 bgImageStyle: { height: '450px' }
-isShowTitleInHome: false
-actionText: Guide
-actionLink: /views/other/guide
+isShowTitleInHome: true
+actionText: 关于我
+actionLink: /views/other/aboutMe/
 features:
   - title: Yesterday
-    details: 开发一款看着开心、写着顺手的 vuepress 博客主题
+    details: 是一个220斤的死肥宅，没事只是抄代码，从来不管为什么
   - title: Today
-    details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
+    details: 努力减肥，坚持学习，变得更好
   - title: Tomorrow
-    details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
+    details: 挣很多很多的钱，让家人过上更好的生活
 ---

@@ -1,7 +1,7 @@
 module.exports = {
   base: '/luke-blog/',
-  title: 'Luke的博客',
-  description: '欢迎大家来看我的博客',
+  title: '假使空樽饮月',
+  description: '咸鱼就要翻身了',
   head: [
     [
       'link',
@@ -53,7 +53,7 @@ module.exports = {
         ]
       }
     ],
-    // type: 'blog',
+    type: 'blog',
     blogConfig: {
       category: {
         location: 2,
@@ -87,7 +87,18 @@ module.exports = {
     author: 'lukeZhang',
     authorAvatar: '/luke_logo.png',
     record: 'xxxx',
-    startYear: '2020'
+    startYear: '2020',
+    valineConfig: {
+      appId: 'B52rPGbUt5Jmv6zXmyoydSjo-gzGzoHsz', // your appId
+      appKey: 'IpckCb14C92IepmkJOv1ciu0' // your appKey
+    },
+    vssueConfig: {
+      platform: 'github',
+      owner: 'zlu1123',
+      repo: 'luke-blog',
+      clientId: '212b3313a3ea76d7a104',
+      clientSecret: 'fc20e2a7065158b39e623aec8b8cfdda84ac64ac'
+    }
   },
   markdown: {
     lineNumbers: true
