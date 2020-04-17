@@ -1,6 +1,7 @@
 {
   "name": "luke-blog",
   "version": "1.0.0",
+  "repository": "git@github.com:zlu1123/luke-blog",
   "author": "luke",
   "scripts": {
     "docs:dev": "vuepress dev docs",
