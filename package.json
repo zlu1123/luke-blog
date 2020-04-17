@@ -4,8 +4,8 @@
   "repository": "git@github.com:zlu1123/luke-blog",
   "author": "luke",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs"
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.3.1",
