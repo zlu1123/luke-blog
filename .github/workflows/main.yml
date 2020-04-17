@@ -14,26 +14,18 @@ jobs:
     steps:
       # 拉取代码
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
 
       # 生成静态文件
-      # - name: Build
-      #   run: npm install && npm run docs:build
-      # 部署到 GitHub Pages
-      # - name: Deploy
-      #   uses: JamesIves/github-pages-deploy-action@releases/v3
-      #   with:
-      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     BRANCH: gh-pages
-      #     FOLDER: docs/.vuepress/dist
+      - name: Build
+        run: npm install && npm run docs:build
 
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
-        env:
+      # 部署到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: zlu1123/luke-blog
-          TARGET_BRANCH: gh_pages
-          BUILD_SCRIPT: npm install && npm run docs:build
-          BUILD_DIR: blog/.vuepress/dist/
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
