@@ -32,22 +32,12 @@ jobs:
           FOLDER: docs/.vuepress/dist
 
       # 部署到 云服务器
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - name: Build Project
-        run: |
-          npm install
-          npm run docs:build --if-present
-      - name: List output files
-        run: ls
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rltgoDzvO --delete"
-          SOURCE: "docs/.vuepress/dist"
+          SOURCE: "docs/.vuepress/dist/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
