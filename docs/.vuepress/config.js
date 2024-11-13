@@ -90,7 +90,8 @@ module.exports = {
     startYear: '2020',
     valineConfig: {
       appId: 'B52rPGbUt5Jmv6zXmyoydSjo-gzGzoHsz', // your appId
-      appKey: 'IpckCb14C92IepmkJOv1ciu0' // your appKey
+      appKey: 'IpckCb14C92IepmkJOv1ciu0', // your appKey
+      masterKey: '1W9wsMVGHe97p94O7GFKQcAI'
     },
     vssueConfig: {
       platform: 'github',
